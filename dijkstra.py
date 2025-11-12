@@ -12,7 +12,7 @@ def dijkstra(graph, start, end):
     visited = set()
 
     while pq:
-        node, distance = heapq.heappop(pq)
+        distance, node = heapq.heappop(pq)
 
         if node == end :
             break
